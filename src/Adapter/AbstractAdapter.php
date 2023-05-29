@@ -551,7 +551,7 @@ abstract class AbstractAdapter implements AdapterInterface
         }
 
         if (StringUtils::isValidUtf8($text)) {
-            return utf8_decode($text);
+            return $text;
         }
 
         return $text;
